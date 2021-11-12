@@ -1,18 +1,17 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-}
+/* Error: Expected identifier.
+ *    ,
+ * 33 |   @include .btn_exploration;
+ *    |            ^
+ *    '
+ *   sass\scss\main.scss 33:12  root stylesheet */
 
-#logo {
-  display: flex;
-  justify-content: center;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a    \2577 \a 33 \2502    @include .btn_exploration;\d\a    \2502             ^\a    \2575 \a   sass\\scss\\main.scss 33:12  root stylesheet";
 }
-
-#logo img {
-  width: 8em;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-/*# sourceMappingURL=main.css.map */

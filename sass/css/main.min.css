@@ -15,4 +15,23 @@ body {
   margin-bottom: 0.5em;
 }
 
+.picture img {
+  width: 100%;
+  height: 20rem;
+  background-color: black;
+}
+
+.picture p {
+  color: red;
+  background-color: blue;
+}
+
+#infos {
+  background-color: black;
+}
+
+#infos h3 {
+  color: white;
+}
+
 /*# sourceMappingURL=main.min.css.map */

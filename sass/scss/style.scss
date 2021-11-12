@@ -184,18 +184,29 @@ width: 100%;
         font-size: 1.5rem;
         margin-right: 1rem;
         margin-top: 1rem;
-        color: black;
+        color: white;
+        background-color:black;
+        font-weight: bold;
+   
     }
 
-    .fa-heart:active{
-        color:violet;
+    .fa-heart::before {
+        transition: color 1s ease-out;
+        content: "\f004";
+        font-weight: bold;
     }
+    .fa-heart:hover::before{
+        cursor: pointer;
+        color:$secondColor;
+        
+    }
+}
 
     p{
         font-weight : normal;
     }
 
- }
+ 
 
  /*partie pied de page*/
 

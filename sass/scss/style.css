@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -223,5 +223,3 @@ p {
 .liste_footer a > i {
   padding-right: 0.5rem;
 }
-
-/*# sourceMappingURL=style.css.map */

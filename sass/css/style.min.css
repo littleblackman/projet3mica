@@ -76,7 +76,6 @@ body {
   margin-bottom: 2em;
 }
 
-/*partie fonctionnement*/
 #Fonctionnement {
   display: flex;
   flex-wrap: wrap;
@@ -139,7 +138,6 @@ body {
   margin-top: 1.2em;
 }
 
-/*partie restaurants*/
 #restaurants {
   display: flex;
   flex-direction: column;
@@ -196,7 +194,6 @@ p {
   font-weight: normal;
 }
 
-/*partie pied de page*/
 #infos {
   margin-top: 2rem;
   height: 15rem;
@@ -224,4 +221,4 @@ p {
   padding-right: 0.5rem;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.min.css.map */
