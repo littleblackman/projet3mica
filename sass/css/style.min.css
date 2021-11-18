@@ -57,7 +57,7 @@ body {
   width: 12em;
   height: 2.5em;
   border-radius: 20px;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient();
   margin-top: 2em;
 }
 
@@ -186,7 +186,6 @@ body {
 
 .offres .fa-heart:hover::before {
   cursor: pointer;
-  color: #FF79DA;
 }
 
 p {

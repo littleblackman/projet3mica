@@ -1,4 +1,4 @@
-@import '_effets';
+@import "utils/_variables";
 
 body{
     font-family: 'Roboto', sans-serif;
@@ -62,7 +62,7 @@ body{
         width: 12em;
         height: 2.5em;
         border-radius: 20px;
-        background: linear-gradient($secondColor,$primaryColor);
+        background: linear-gradient($primaryColor,$secondColor,);
         margin-top: 2em;
         
         a{
@@ -197,7 +197,6 @@ width: 100%;
     .fa-heart:hover::before{
         cursor: pointer;
         color:$secondColor;
-        
     }
 }
 
