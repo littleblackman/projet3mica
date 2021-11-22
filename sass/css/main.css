@@ -1,22 +1,6 @@
-.picture {
-  height: 50rem;
-}
-
 #logo {
-  background-color: aqua;
-}
-
-.plats {
-  background-color: blue;
-  color: blue;
-}
-
-p {
-  color: red;
-}
-
-h2 {
-  color: red;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */

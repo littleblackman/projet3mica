@@ -1,20 +1,4 @@
-.picture {
-  height: 50rem;
-}
-
-#logo {
-  background-color: aqua;
-}
-
-.plats {
-  background-color: blue;
-  color: blue;
-}
-
-p {
-  color: violet;
-}
-
-h2 {
-  color: red;
+#logo{
+  display: flex;
+  justify-content: center;
 }
