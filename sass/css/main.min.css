@@ -1,11 +1,106 @@
-.titre_resto {
-  background-color: blueviolet;
-  color: aqua;
-  width: 50rem;
+body {
+  margin: 0;
 }
 
-.titre_resto h1 {
-  color: blue;
+h2 {
+  text-decoration: 2px #99E2D0 underline;
+}
+
+h4 {
+  font-weight: normal;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+}
+
+#logo img {
+  width: 8rem;
+}
+
+.picture img {
+  width: 8em;
+  position: relative;
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+main {
+  direction: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-left: 1rem;
+  background-color: whitesmoke;
+  width: 95%;
+  border-radius: 50px;
+  margin-top: -4.5rem;
+}
+
+.fa-heart {
+  font-size: 1.3rem;
+  margin-left: 25%;
+}
+
+.plats {
+  background-color: white;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.plats h4 {
+  margin-top: -1rem;
+}
+
+.btn_exploration {
+  margin-left: 20%;
+  display: flex;
+  justify-content: center;
+  width: 12em;
+  height: 2.5em;
+  border-radius: 20px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  margin-top: 2em;
+}
+
+.btn_exploration a {
+  font-size: 0.9em;
+  color: white;
+  text-decoration: none;
+  top: 25%;
+  position: relative;
+}
+
+#infos {
+  margin-top: 3rem;
+  height: 15rem;
+  background-color: black;
+  text-decoration: none;
+}
+
+#infos h3 {
+  padding-top: 1rem;
+  margin-left: 1rem;
+  color: white;
+}
+
+.liste_footer {
+  margin-left: -1rem;
+  list-style-type: none;
+  padding-top: 1rem;
+}
+
+.liste_footer a {
+  color: white;
+}
+
+.liste_footer a > i {
+  padding-right: 0.5rem;
 }
 
 /*# sourceMappingURL=main.min.css.map */
