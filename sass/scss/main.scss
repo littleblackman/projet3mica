@@ -18,6 +18,13 @@ h2{
         width: 8rem;
     }
 
+        .fa-arrow-left{
+           cursor: pointer;
+            position: absolute;
+            margin-right: 85%;
+            margin-top: 3px;
+        }
+        
     
   }
 .picture{
@@ -40,6 +47,14 @@ main{
     border-radius: 50px;
     margin-top: -4.5rem;
 }
+
+.titre_resto
+{
+    h1{
+        padding-top: 1.5rem;
+    }
+    
+}
     .fa-heart{
         font-size: 1.3rem;
         margin-left:25% ;
@@ -60,7 +75,6 @@ main{
 
         h4{
             margin-top: -1rem;
-
         }
     
 }

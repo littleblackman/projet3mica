@@ -19,6 +19,13 @@ h4 {
   width: 8rem;
 }
 
+#logo .fa-arrow-left {
+  cursor: pointer;
+  position: absolute;
+  margin-right: 85%;
+  margin-top: 3px;
+}
+
 .picture img {
   width: 8em;
   position: relative;
@@ -36,6 +43,10 @@ main {
   width: 95%;
   border-radius: 50px;
   margin-top: -4.5rem;
+}
+
+.titre_resto h1 {
+  padding-top: 1.5rem;
 }
 
 .fa-heart {
