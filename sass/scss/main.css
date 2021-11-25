@@ -1,14 +1,34 @@
+@keyframes animation_page {
+  0% {
+    transform: translateY(1vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
 /*Partie header*/
 body {
-  margin: 0;
+  margin: 0.5rem 0 0;
 }
 
 h2 {
   text-decoration: 2px #99E2D0 underline;
+  font-size: 1.3rem;
 }
 
 h4 {
   font-weight: normal;
+}
+
+.return .fa-arrow-left {
+  cursor: pointer;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5%;
+  color: black;
 }
 
 #logo {
@@ -17,18 +37,10 @@ h4 {
 }
 
 #logo img {
-  width: 8rem;
-}
-
-#logo .fa-arrow-left {
-  cursor: pointer;
-  position: absolute;
-  margin-right: 85%;
-  margin-top: 3px;
+  width: 10rem;
 }
 
 .picture img {
-  width: 8em;
   position: relative;
   width: 100%;
   margin-top: 0.5em;
@@ -43,17 +55,26 @@ main {
   padding-left: 1rem;
   background-color: whitesmoke;
   width: 95%;
-  border-radius: 50px;
-  margin-top: -4.5rem;
+  border-radius: 50px 50px 0 0;
+  margin-top: -5rem;
+  padding-bottom: 2rem;
 }
 
 .titre_resto h1 {
   padding-top: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .fa-heart {
   font-size: 1.3rem;
-  margin-left: 25%;
+  margin-left: 40%;
+}
+
+section {
+  animation-name: animation_page;
+  animation-duration: 1500ms;
+  animation-delay: 0s;
+  animation-timing-function: ease-in-out;
 }
 
 /*Partie Entrances*/
@@ -65,10 +86,17 @@ main {
   border-radius: 20px;
   margin-right: 1rem;
   cursor: pointer;
+  height: 5rem;
 }
 
 .plats h4 {
-  margin-top: -1rem;
+  margin-top: -2.5rem;
+}
+
+.plats p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 90%;
 }
 
 .btn_exploration {
@@ -79,7 +107,7 @@ main {
   height: 2.5em;
   border-radius: 20px;
   background: linear-gradient(#FF79DA, #9356DC);
-  margin-top: 2em;
+  margin-top: 2.5em;
 }
 
 .btn_exploration a {
@@ -91,7 +119,8 @@ main {
 }
 
 #infos {
-  margin-top: 3rem;
+  position: absolute;
+  width: 100%;
   height: 15rem;
   background-color: black;
   text-decoration: none;
