@@ -1,10 +1,18 @@
 @keyframes animation_page {
   0% {
-    transform: translateY(1vh);
+    transform: translateY(10vh);
     opacity: 0;
   }
   100% {
     transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -67,11 +75,12 @@ main {
   margin-left: 40%;
 }
 
-section {
+#entrances {
   animation-name: animation_page;
-  animation-duration: 1500ms;
+  animation-duration: 2000ms;
   animation-delay: 0s;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in;
+  animation-direction: normal;
 }
 
 .plats {
@@ -93,6 +102,51 @@ section {
   font-size: 1rem;
   margin-top: 0.5rem;
   margin-left: 90%;
+}
+
+.desserts {
+  background-color: white;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-right: 1rem;
+  cursor: pointer;
+  height: 5.1rem;
+}
+
+.desserts h4 {
+  margin-top: -2.5rem;
+}
+
+.desserts p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 90%;
+}
+
+.comfirmation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: turquoise;
+  margin-top: 14px;
+  margin-left: 68%;
+  height: 5.1rem;
+  width: 5rem;
+  border-radius: 0 25px 25px 0;
+}
+
+.comfirmation .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  color: #99E2D0;
+  background-color: white;
 }
 
 .btn_exploration {

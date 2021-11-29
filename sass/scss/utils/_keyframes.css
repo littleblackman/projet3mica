@@ -1,10 +1,19 @@
 @keyframes animation_page {
   0% {
-    transform: translateY(1vh);
+    transform: translateY(10vh);
     opacity: 0;
   }
   100% {
     transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
     opacity: 1;
   }
 }
