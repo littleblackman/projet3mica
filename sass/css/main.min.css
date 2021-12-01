@@ -1,3 +1,11 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes animation_page {
   0% {
     transform: translateY(10vh);
@@ -5,14 +13,6 @@
   }
   100% {
     transform: translateY(0px);
-    opacity: 1;
-  }
-}
-@keyframes heart {
-  0% {
-    opacity: 0;
-  }
-  100% {
     opacity: 1;
   }
 }
@@ -104,27 +104,6 @@ main {
   margin-left: 90%;
 }
 
-.desserts {
-  background-color: white;
-  padding-left: 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid white;
-  border-radius: 20px;
-  margin-right: 1rem;
-  cursor: pointer;
-  height: 5.1rem;
-}
-
-.desserts h4 {
-  margin-top: -2.5rem;
-}
-
-.desserts p {
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  margin-left: 90%;
-}
-
 .comfirmation {
   display: flex;
   align-items: center;
@@ -147,6 +126,35 @@ main {
   border-radius: 20px;
   color: #99E2D0;
   background-color: white;
+  animation-name: rotate;
+}
+
+.comfirmation .icon:hover {
+  animation-name: rotate;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-direction: normal;
+}
+
+.desserts {
+  background-color: white;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-right: 1rem;
+  cursor: pointer;
+  height: 5.1rem;
+}
+
+.desserts h4 {
+  margin-top: -2.5rem;
+}
+
+.desserts p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-left: 90%;
 }
 
 .btn_exploration {

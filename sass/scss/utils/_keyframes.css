@@ -1,3 +1,12 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes animation_page {
   0% {
     transform: translateY(10vh);
@@ -5,15 +14,6 @@
   }
   100% {
     transform: translateY(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes heart {
-  0% {
-    opacity: 0;
-  }
-  100% {
     opacity: 1;
   }
 }
