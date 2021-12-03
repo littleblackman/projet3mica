@@ -6,10 +6,11 @@ body{
     margin:0.5rem 0 0;
 }
 
+
 h2{
-    text-decoration:2px $tertiaryColor underline ;
+    text-decoration: 3px #99E2D0 underline;
     font-size: 1.3rem;
- }
+  
  h4{
      font-weight: normal;
  }
@@ -94,8 +95,8 @@ main{
     animation-delay: 0s;
     animation-timing-function: ease-in;
     animation-direction: normal;
-} 
 
+} 
     .plats {
     background-color: white;
     padding-left: 1rem;
@@ -108,20 +109,20 @@ main{
   }
 
     .comfirmation{
-    height: 100%;
-    width: 25%;
-    overflow: hidden;
-    background-color:$tertiaryColor;
-    color: white;
-    border-radius: 0px  20px 20px 0;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    margin-left: 75%;   
+        position: relative;
+        height: 100%;
+        width: 25%;
+        overflow: hidden;
+        background-color:$tertiaryColor;
+        color: white;
+        border-radius: 0px  20px 20px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-left: 75%;   
         .comfirmation:hover{
-            
+    
         }
       
  }
@@ -243,10 +244,11 @@ main{
         }  
   }
 
-  @media screen and (min-width: 725px){
+  @media screen and (min-width: 725px){ 
   main{
       margin-top: -8rem;
-  }
+   }
+
     #logo{
         img{
             width: 12rem;
@@ -262,8 +264,8 @@ main{
         }
      }   
     
-     .liste_footer{  
+        .liste_footer{  
         display: flex;
         justify-content: center;
-  }
-  }
+        }
+ } 
