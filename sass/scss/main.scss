@@ -2,6 +2,7 @@
 @import "utils/_keyframes";
 /*Partie header*/
 body{
+    font-family: 'Roboto', sans-serif;
     margin:0.5rem 0 0;
 }
 
@@ -38,32 +39,54 @@ h2{
         margin-bottom: 0.5em;
     }
 }
-/*Partie titre restaurant*/
+/*Partie menu*/
 main{
     direction: flex;
     flex-wrap: wrap;
     position:relative;
     padding-left: 1rem;
     background-color: whitesmoke;
-    width: 95%;
     border-radius: 50px 50px 0 0;
-    margin-top: -5rem;
+    margin-top: -100px;
     padding-bottom: 2rem;
 
 }
 
-.titre_resto
-{
-    h1{
-        padding-top: 1.5rem;
-        font-size: 1.7rem;
-    }
+#menu{
+  display: flex;
+
+   .titre_resto{
+       width: 80%;
+   }
+
+   .heart{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 20%;  
+       font-size: 1.3rem;
+   }
+
+   .fa-heart {
+    float: right;
+    font-size: 1.2rem;
+    
+    color: white;
+    text-shadow: -1px 0 black, 0 1px #000, 1px 0 #000, 0 -1px #000
 }
-    .fa-heart{
-        font-size: 1.3rem;
-        margin-left:40% ;
-        
-    }
+
+.fa-heart::before {
+    transition: color 1s ease-out;
+    content: "\f004";
+    font-weight: bold;
+}
+
+.fa-heart:hover::before {
+    cursor: pointer;
+    color: #FF79DA;
+}    
+    
+}
 /*Partie entrances*/
 #entrances {
     animation-name: animation_page;
@@ -73,7 +96,7 @@ main{
     animation-direction: normal;
 } 
 
-.plats {
+    .plats {
     background-color: white;
     padding-left: 1rem;
     margin-bottom: 1rem;
@@ -83,6 +106,43 @@ main{
     cursor: pointer;
     height: 5rem;
   }
+
+    .comfirmation{
+    height: 100%;
+    width: 25%;
+    overflow: hidden;
+    background-color:$tertiaryColor;
+    color: white;
+    border-radius: 0px  20px 20px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 75%;   
+        .comfirmation:hover{
+            
+        }
+      
+ }
+    .icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        color: $tertiaryColor;
+        background-color: white;
+    }
+
+         .icon:hover{
+            animation-name: rotate;
+            animation-duration: 0.5s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in;
+            animation-direction: normal;
+         }
   
   .plats h4 {
     margin-top: -2.5rem;
@@ -94,46 +154,23 @@ main{
     margin-left: 90%;
   }
 
-.comfirmation {
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    background-color:turquoise;
-    margin-top: 14px;
-    margin-left: 68%;
-    height:5.1rem;
-    width: 5rem;
-    border-radius: 0 25px 25px 0;
-
-    
-    .icon{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        border-radius: 20px;
-        color: $tertiaryColor;
-        background-color: white;
-        animation-name: rotate;
-    }
-
-         .icon:hover {
-            animation-name:rotate;
-            animation-duration: 4s;
-            animation-delay: 0s;
-            animation-direction: normal;
-            
-        }
-
-    
-}  
-
-  
-/*¨Parie desserts*/
-
+  /*Partie dishes*/
+  #dishes{
+    animation-name: animation_page;
+    animation-duration: 2000ms;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+  }
+ 
+/*¨Partie desserts*/
+#desserts{
+    animation-name: animation_page;
+    animation-duration: 2000ms;
+    animation-delay: 1s;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+}
 .desserts{ 
     background-color: white;
     padding-left: 1rem;
@@ -156,8 +193,12 @@ main{
 }
 
 /*Bouton commande*/
+#bouton{
+    display: flex;
+    justify-content: center;
+}
+
 .btn_exploration{
-    margin-left: 20%;
     display: flex;
     justify-content: center;
     width: 12em;
@@ -201,4 +242,28 @@ main{
         padding-right: 0.5rem;  
         }  
   }
- 
+
+  @media screen and (min-width: 725px){
+  main{
+      margin-top: -8rem;
+  }
+    #logo{
+        img{
+            width: 12rem;
+        }
+    }
+
+   
+    #infos{ 
+        h3{
+            font-size: 25px;
+            text-align: center;
+            color: white;
+        }
+     }   
+    
+     .liste_footer{  
+        display: flex;
+        justify-content: center;
+  }
+  }

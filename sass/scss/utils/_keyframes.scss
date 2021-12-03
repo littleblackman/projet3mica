@@ -1,12 +1,12 @@
-@keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+@keyframes rotate{
+  from{
+    -webkit-transform: rotate(0deg);
   }
-
+  to{
+    -webkit-transform: rotate(360deg);
+  }
+}
+ 
   @keyframes animation_page{
     0%{
         transform: translateY(10vh);
@@ -17,6 +17,8 @@
          opacity: 1;
      }
   }
+
+
  
 
 

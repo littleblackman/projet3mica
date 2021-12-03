@@ -106,8 +106,8 @@ body{
     }  
     
 .btn {
-display: flex;
-align-items: center;
+ display: flex;
+ align-items: center;
  height: 3rem;
  text-decoration:none;
  padding: 5px 40px;
@@ -168,26 +168,28 @@ align-items: center;
         object-fit: cover;
     }
 
-    .fa-heart{
-        float: right;
-        font-size: 1.5rem;
-        margin-right: 1rem;
-        margin-top: 1rem;
-        color: white;
-        background-color:black;
-       
-    }
 
-    .fa-heart::before {
-        transition: color 1s ease-out;
-        content: "\f004";
-        font-weight: bold;
-    }
-    .fa-heart:hover::before{
-        cursor: pointer;
-        color:$secondColor;
-    }
+        .fa-heart {
+            float: right;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            margin-top: 1rem;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px #000, 1px 0 #000, 0 -1px #000
+        }
+
+        .fa-heart::before {
+            transition: color 1s ease-out;
+            content: "\f004";
+            font-weight: bold;
+        }
+        
+        .fa-heart:hover::before {
+            cursor: pointer;
+            color: #FF79DA;
+        }    
 }
+
 
     p{
         font-weight : normal;
