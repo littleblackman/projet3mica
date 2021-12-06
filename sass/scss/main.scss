@@ -10,6 +10,7 @@ body{
 h2{
     text-decoration: 3px #99E2D0 underline;
     font-size: 1.3rem;
+ }    
   
  h4{
      font-weight: normal;
@@ -71,7 +72,6 @@ main{
    .fa-heart {
     float: right;
     font-size: 1.2rem;
-    
     color: white;
     text-shadow: -1px 0 black, 0 1px #000, 1px 0 #000, 0 -1px #000
 }
@@ -98,35 +98,82 @@ main{
 
 } 
     .plats {
-    background-color: white;
-    padding-left: 1rem;
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color:white;
     margin-bottom: 1rem;
+    padding-left: 1rem;
     border: 1px solid white;
     border-radius: 20px;
     margin-right: 1rem;
     cursor: pointer;
     height: 5rem;
-  }
 
-    .comfirmation{
-        position: relative;
+    h3{
+        height: 50%;
+    }
+      
+      .plats p {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        margin-left: 90%;
+      }
+
+        .name_plats{
+        width: 80%;
         height: 100%;
-        width: 25%;
+       
+        }
+
+        .comfirmation:hover > .price{
+            h5{ 
+            animation-name: truc;
+            animation-duration: 5s;
+             }
+        }
+
+        .price{
+        width: 20%;
+
+            h5{
+             margin-top: 3rem;
+            margin-left: 50%;
+                    }  
+            }
+        
+        }
+  
+
+    .plats:hover > .comfirmation{
+        animation-name: rotate;
+        animation-name:truc;
+        animation-duration: 0.5s;
+        animation-delay: 0s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 100%;
+        width: 15%;
         overflow: hidden;
         background-color:$tertiaryColor;
         color: white;
         border-radius: 0px  20px 20px 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2rem;
-        margin-left: 75%;   
-        .comfirmation:hover{
-    
-        }
+        left: 85%;
+     } 
+
+     .comfirmation:hover > .price{
+        
+         animation-name: truc;
+         animation-delay: 1s;
+          
+     }
       
- }
-    .icon{
+    .comfirmation:hover > .icon{
+        animation-name: rotate; 
+        animation-duration: 0.5s;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -137,23 +184,13 @@ main{
         background-color: white;
     }
 
-         .icon:hover{
-            animation-name: rotate;
-            animation-duration: 0.5s;
-            animation-delay: 0s;
-            animation-timing-function: ease-in;
-            animation-direction: normal;
-         }
-  
-  .plats h4 {
-    margin-top: -2.5rem;
-  }
-  
-  .plats p {
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    margin-left: 90%;
-  }
+    h4{
+        padding-top: 0.5rem;
+    }
+
+    .plats h4 {
+        margin-top: -2.5rem;
+      }
 
   /*Partie dishes*/
   #dishes{
@@ -245,27 +282,27 @@ main{
   }
 
   @media screen and (min-width: 725px){ 
-  main{
-      margin-top: -8rem;
-   }
-
-    #logo{
-        img{
-            width: 12rem;
-        }
-    }
-
-   
-    #infos{ 
-        h3{
-            font-size: 25px;
-            text-align: center;
-            color: white;
-        }
-     }   
-    
-        .liste_footer{  
-        display: flex;
-        justify-content: center;
-        }
- } 
+    main{
+        margin-top: -8rem;
+     } 
+  
+      #logo{
+          img{
+              width: 12rem;
+          }
+      }
+  
+     
+      #infos{ 
+          h3{
+              font-size: 25px;
+              text-align: center;
+              color: white;
+          }
+       }   
+      
+          .liste_footer{  
+          display:flex;
+          justify-content: center;
+          }
+     }
