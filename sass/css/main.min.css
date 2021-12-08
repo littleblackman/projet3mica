@@ -16,6 +16,26 @@
     opacity: 1;
   }
 }
+@keyframes truc {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+@keyframes machin {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
   margin: 0.5rem 0 0;
@@ -24,7 +44,6 @@ body {
 h2 {
   text-decoration: 3px #99E2D0 underline;
   font-size: 1.3rem;
-  margin-top: 0.2rem;
 }
 
 h4 {
@@ -56,8 +75,6 @@ h4 {
 }
 
 main {
-  direction: flex;
-  flex-wrap: wrap;
   position: relative;
   padding-left: 1rem;
   background-color: whitesmoke;
@@ -109,9 +126,13 @@ main {
 }
 
 .plats {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
   background-color: white;
-  padding-left: 1rem;
   margin-bottom: 1rem;
+  padding-left: 1rem;
   border: 1px solid white;
   border-radius: 20px;
   margin-right: 1rem;
@@ -119,22 +140,51 @@ main {
   height: 5rem;
 }
 
-.comfirmation {
-  position: relative;
+.plats h3 {
+  height: 50%;
+}
+
+.plats h4 {
+  padding-top: 0.5rem;
+}
+
+.plats .name_plats {
+  width: 75%;
   height: 100%;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
   width: 25%;
+}
+
+.price h5 {
+  margin-left: 50%;
+  margin-top: 3rem;
+}
+
+.plats:hover > .comfirmation {
+  animation-name: rotate;
+  animation-name: truc;
+  animation-duration: 0.5s;
+  animation-delay: 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 15%;
   overflow: hidden;
   background-color: #99E2D0;
   color: white;
   border-radius: 0px 20px 20px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  margin-left: 75%;
+  left: 85%;
 }
 
-.icon {
+.comfirmation:hover > .icon {
+  animation-name: rotate;
+  animation-duration: 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,22 +195,19 @@ main {
   background-color: white;
 }
 
-.icon:hover {
-  animation-name: rotate;
-  animation-duration: 0.5s;
+.plats:hover > .price h5 {
+  animation-name: machin;
   animation-delay: 0s;
-  animation-timing-function: ease-in;
-  animation-direction: normal;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .plats h4 {
   margin-top: -2.5rem;
 }
 
-.plats p {
-  font-size: 1rem;
-  margin-top: 0.5rem;
-  margin-left: 90%;
+.icon {
+  display: none;
 }
 
 #dishes {

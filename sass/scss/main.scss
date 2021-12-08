@@ -43,8 +43,7 @@ h2{
 }
 /*Partie menu*/
 main{
-    direction: flex;
-    flex-wrap: wrap;
+   
     position:relative;
     padding-left: 1rem;
     background-color: whitesmoke;
@@ -88,6 +87,8 @@ main{
 }    
     
 }
+
+
 /*Partie entrances*/
 #entrances {
     animation-name: animation_page;
@@ -114,41 +115,31 @@ main{
     h3{
         height: 50%;
     }
+
+    h4{
+        padding-top: 0.5rem;
+    }
       
-      .plats p {
-        font-size: 1rem;
-        margin-top: 0.5rem;
-        margin-left: 90%;
-      }
-
         .name_plats{
-        width: 80%;
+        width: 75%;
         height: 100%;
-       
         }
-
-        .comfirmation:hover > .price{
-            h5{ 
-            animation-name: truc;
-            animation-duration: 5s;
-             }
-        }
+     }    
 
         .price{
-        width: 20%;
-
-            h5{
-             margin-top: 3rem;
-            margin-left: 50%;
-                    }  
-            }
-        
+            display: flex;
+            justify-content:center;
+            width: 25%;
+        h5{
+          margin-left: 50%;
+            margin-top: 3rem;
         }
-  
 
-    .plats:hover > .comfirmation{
+     }    
+
+     .plats:hover > .comfirmation{
         animation-name: rotate;
-        animation-name:truc;
+        animation-name: truc;
         animation-duration: 0.5s;
         animation-delay: 0s;
         display: flex;
@@ -162,14 +153,7 @@ main{
         color: white;
         border-radius: 0px  20px 20px 0;
         left: 85%;
-     } 
-
-     .comfirmation:hover > .price{
-        
-         animation-name: truc;
-         animation-delay: 1s;
-          
-     }
+     }  
       
     .comfirmation:hover > .icon{
         animation-name: rotate; 
@@ -184,12 +168,20 @@ main{
         background-color: white;
     }
 
-    h4{
-        padding-top: 0.5rem;
+    .plats:hover > .price h5{
+        animation-name: machin;
+        animation-delay:0s;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
     }
 
     .plats h4 {
         margin-top: -2.5rem;
+      }
+
+
+      .icon{
+          display: none;
       }
 
   /*Partie dishes*/
@@ -209,6 +201,7 @@ main{
     animation-timing-function: ease-in;
     animation-direction: normal;
 }
+
 .desserts{ 
     background-color: white;
     padding-left: 1rem;
@@ -281,7 +274,7 @@ main{
         }  
   }
 
-  @media screen and (min-width: 725px){ 
+@media screen and (min-width: 725px){ 
     main{
         margin-top: -8rem;
      } 
@@ -291,8 +284,12 @@ main{
               width: 12rem;
           }
       }
+
+/* Partie Entrances*/
+
+
   
-     
+/*Pied de page */    
       #infos{ 
           h3{
               font-size: 25px;
@@ -305,4 +302,4 @@ main{
           display:flex;
           justify-content: center;
           }
-     }
+ }
