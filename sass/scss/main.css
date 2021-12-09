@@ -315,15 +315,45 @@ main h1 {
 }
 
 @media screen and (min-width: 725px) {
-  main {
-    margin-top: -8rem;
+  .return .fa-arrow-left {
+    cursor: pointer;
+    position: absolute;
+    margin-top: 5px;
+    color: black;
   }
   #logo img {
     width: 12rem;
+    padding-bottom: 1rem;
   }
-  /* Partie Entrances*/
+  .desktop {
+    background-color: #f3ebeb;
+    padding-top: 0rem;
+  }
+  .picture {
+    display: flex;
+    justify-content: center;
+  }
+  .picture img {
+    position: relative;
+    width: 75%;
+    height: 25rem;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+  }
+  /*Partie menu*/
+  main {
+    width: 75%;
+    margin-left: 12%;
+  }
+  main #menu {
+    display: flex;
+    justify-content: center;
+  }
   /*Pied de page */
-  #infos h3 {
+  .logo_footer {
+    text-align: center;
+  }
+  #info h3 {
     font-size: 25px;
     text-align: center;
     color: white;

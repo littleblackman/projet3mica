@@ -22,7 +22,6 @@ body{
       text-align: center;
       height: 16em;
       background-color: rgb(245, 241, 241);
-      
     }
 
     .localisation{ 
@@ -183,6 +182,7 @@ width: 80%;
         color: #0c6b50;
         background: #99E2D0;
         border-radius: 2px;
+        font-weight: bold;
     }
 
 
@@ -238,6 +238,9 @@ width: 80%;
  }
 
 @media screen and (min-width: 765px){
+body{
+    margin-right: 0;
+}
 /*Partie logo*/
     #logo{
         img{
@@ -278,12 +281,12 @@ width: 80%;
     }
 
     .choix{
-        display: flex;
-        flex-wrap: nowrap;
+      margin-left: 35%;
+      text-align: start;
     }
 
             .btn{
-                width: 30%;
+                width: 45%;
             }
 }
 
@@ -296,6 +299,7 @@ width: 80%;
     h3{
     font-size: 30px;
     margin-bottom: 2rem;
+    text-align: center;
      }
 }
     .block_offres {

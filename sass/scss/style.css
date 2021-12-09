@@ -175,6 +175,7 @@ h3 {
   color: #0c6b50;
   background: #99E2D0;
   border-radius: 2px;
+  font-weight: bold;
 }
 
 .offres .fa-heart {
@@ -226,6 +227,9 @@ h3 {
 }
 
 @media screen and (min-width: 765px) {
+  body {
+    margin-right: 0;
+  }
   /*Partie logo*/
   #logo img {
     width: 12rem;
@@ -250,11 +254,11 @@ h3 {
     font-size: 30px;
   }
   #Fonctionnement .choix {
-    display: flex;
-    flex-wrap: nowrap;
+    margin-left: 35%;
+    text-align: start;
   }
   #Fonctionnement .btn {
-    width: 30%;
+    width: 45%;
   }
   /*Partie restaurants*/
   #restaurants {
@@ -263,6 +267,7 @@ h3 {
   .titre h3 {
     font-size: 30px;
     margin-bottom: 2rem;
+    text-align: center;
   }
   .block_offres {
     background-color: #f3f3f3;
